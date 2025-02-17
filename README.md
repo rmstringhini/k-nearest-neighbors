@@ -1,5 +1,3 @@
-Easy and simple implementation of the KNN algorithm using scikit-learn.
-
 The KNN (K-Nearest Neighbors) algorithm is a simple yet effective supervised learning algorithm used for classification and regression tasks. It is non-parametric and instance-based, meaning that it does not assume an underlying data distribution and makes predictions based on the similarity of new data points stored training examples.
 
 The KNN algorithm works by identifying a specified number of training samples that are closest to a new data point and using their labels to make a prediction.
