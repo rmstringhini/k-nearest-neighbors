@@ -9,16 +9,15 @@ How KNN works:
    - A small K makes the model sensitive to noise, while a large K smooths the decision boundary but may lead to misclassification;
 
 2) Compute the distances between the new data point and all training points:
-   - The most common distance metric used is Euclidean distance, but other options include:
-       - Manhattan distance
-       - Minkowski distance
-       - Cosine similarity
+   - Euclidean distance: $d(p,q)=\sqrt{\sum_{i=1}^{n}(p_i - q_i)^2}$
+   - Manhattan distance: $d(p,q)=\sum_{i=1}^{n}\left | p_i - q_i\right |$
+   - Minkowski distance: $d(p,q)=\left ( \sum_{i=1}^{n}\left | p_i - q_i\right |^p \right )^\frac{1}{P}$, with _p_ determining the type of distance (1 -> manhattan / 2 -> euclidean)
 
-3) Find the K nearest neighbor:
+4) Find the K nearest neighbor:
    - Sort the training points based on their distance from the query point.
    - Select the K closest points (K nearest neighbors)
 
-4) Make a prediction based on the majority vote (for classification) or average (for regression):
+5) Make a prediction based on the majority vote (for classification) or average (for regression):
    - For classification: the label with the most occurences among the K neighbors is assigned to the new data point
    - For regression: the predicted value is the average of the K neighbor's values
 
