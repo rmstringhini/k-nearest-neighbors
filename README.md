@@ -21,3 +21,6 @@ How KNN works:
 4) Make a prediction based on the majority vote (for classification) or average (for regression):
    - For classification: the label with the most occurences among the K neighbors is assigned to the new data point
    - For regression: the predicted value is the average of the K neighbor's values
+
+
+![KNN](https://github.com/user-attachments/assets/13169495-a746-4d80-9bf6-ee2d5cd576c3)
